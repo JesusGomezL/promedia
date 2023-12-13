@@ -1,0 +1,148 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: #37b3ed;
+	text-decoration: none;
+}
+.w300 {
+	font-weight: 300;
+}
+.w600 {
+	font-weight: 600;
+}
+.w900 {
+	font-weight: 900;
+}
+.azul-1{
+	color: #0091b4;
+}
+.azul-2{
+	color: #1c2d41;
+}
+.formulario{
+	max-width:768px; 
+	margin:0 auto;
+}
+.contenedor{
+	 border:1px solid #f2f2f2; 	 
+	 display:inline-block; 
+	 width:100%;
+}
+.section-title h2 {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding-left: 30px;
+}
+.php-email-form {
+	width: 100%;
+	padding: 30px;
+	background: #fff;
+}
+.php-email-form .form-group {
+	padding-bottom: 8px;
+}
+.php-email-form .validate {
+	display: none;
+	color: red;
+	margin: 0 0 15px 0;
+	font-weight: 400;
+	font-size: 13px;
+}
+.php-email-form .form-group {
+	display: flex;
+	margin-bottom: 15px;
+}
+.php-email-form .input-group {
+	display: flex;
+}
+.php-email-form .form-check {	
+	display:inline-flex;
+	margin-top:1rem;
+	justify-content:start;
+	white-space:nowrap; 
+	font-size: .9rem;
+}
+.php-email-form .form-check label{	
+	margin:2px 0 0 2px;
+	font-weight: 300;
+	color: #333;
+}
+.php-email-form .form-check label a{	
+	font-weight: 900;
+	color: #0091b4;
+}
+.php-email-form input {
+	height: 1rem;
+	border-radius: .8rem;
+	border: 1px solid #eee;
+	background-color: #fbfbfb;
+	padding: 1rem 1.5rem;
+	width: 100%;
+	color: #333;
+}
+.php-email-form textarea {
+	border-radius: .8rem;
+	border: 1px solid #eee;
+	background-color: #fbfbfb;
+	padding: 1rem 1.5rem;
+	width:100%;
+	resize: none;
+}
+.php-email-form button[type=submit] {
+	background: #0091b4;
+	border: 0;
+	padding: .6rem 1.2rem;
+	color: #fff;
+	transition: 0.4s;
+	border-radius: .8rem;
+}
+.php-email-form button[type=submit]:hover {
+	background: #37b3ed;	
+}
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+.php-email-form input::placeholder, 
+.php-email-form textarea::placeholder{ 
+	color:#000;
+	font-weight:500;
+}
+/* Internet Explorer 10-11 */
+.php-email-form input:-ms-input-placeholder, 
+.php-email-form textarea:-ms-input-placeholder{ 
+	color:#000;
+	font-weight:500;
+}
+/* Microsoft Edge */
+.php-email-form input::-ms-input-placeholder, 
+.php-email-form textarea::-ms-input-placeholder{ 
+	color:#000;
+	font-weight:500;
+ }
+.php-email-form .sent-message,
+.php-email-form .alert-message,
+.php-email-form .error-message{
+	display: none;	
+	padding: 10px 30px;
+	font-weight: 300;
+	border-radius: .6rem;
+}
+.sent-message{
+	color:#3c763d; 
+	background-color: #dff0d8; 	
+	text-align: center;
+}
+.alert-message{
+	color: #8c856d;
+	background-color: #f7efd0;
+	text-align: left;
+}
+.error-message{
+	color: #fff;
+	background-color: #ed3c0d;
+	text-align: left;
+}

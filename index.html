@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prueba | Promedia</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css" integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&family=Raleway:wght@500&display=swap" rel="stylesheet">
+	<link href="css/estilos.css" rel="stylesheet">
+	<link rel="shortcut icon" href="https://www.luexia.es/favicon.png">
+</head>
+<body>
+	<div class="formulario">
+		<div class="contenedor container-sm border">
+			<div class="section-title">
+				<h2 class="azul-2">Contacta con nosotros</h2>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 mt-lg-0 d-flex align-items-stretch">
+					<form id="f_enviar" role="form" class="php-email-form">
+						<div class="row">
+							<div class="form-group col-md-6">
+								<input class="form-control" type="text" name="nombre" id="nombre" placeholder="Nombre *" maxlength="60" required>
+							</div>
+							<div class="form-group col-md-6">
+								<input type="email" class="form-control" name="email" id="email" placeholder="Email *" maxlength="255" required>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-md-6">
+								<input class="form-control" type="text" name="telefono" id="telefono" placeholder="Teléfono" maxlength="16">
+							</div>
+							<div class="form-group col-md-6">
+								<input type="text" class="form-control" name="asunto" id="asunto" placeholder="Asunto" maxlength="255">
+							</div>
+						</div>
+						<div class="input-group">
+							<textarea class="form-control" name="comentarios" id="comentarios" rows="7" placeholder="Comentarios *" aria-label="comentarios" maxlength="2000" required></textarea>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="checkAcepto">
+							<label class="form-check-label" for="checkAcepto">
+								He leído y acepto la <a href="#">política de privacidad</a>
+							</label>
+						</div>
+						<div class="my-3">
+							<div class="alert-message"></div>
+							<div class="sent-message"></div>
+							<div class="error-message"></div>
+						</div>
+						<div class="text-center"><button id="enviar" type="submit">Enviar</button></div>
+					</form>
+				</div>
+			</div> <!-- row -->
+		</div> <!-- container -->
+	</div> <!-- formulario -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/enviarContacto.js"></script>
+
+</body>
+</html>
