@@ -35,7 +35,7 @@
 				$('.error-message').fadeIn('slow').delay(3000).fadeOut('slow');
 			}
 		})
-    .fail(function(xhr, status, error) {
+    		.fail(function(xhr, status, error) {
 			console.log (error, 'err');
 		});
 	});
