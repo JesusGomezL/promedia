@@ -19,8 +19,6 @@ function validar_email ($s){
 		return (false);
 	} else {
 		$s = sanear_input ($s);
-		//
-		return ($s);
 	}
 	//
 	return ($s);
