@@ -1,4 +1,5 @@
 <?php
+
 $nombre = isset($_REQUEST['nombre']) ? $_REQUEST['nombre'] : '[Sin nombre]';
 $email = isset($_REQUEST['email']) ? $_REQUEST['email'] : '[Sin e-mail]';
 $telefono = isset($_REQUEST['telefono']) ? $_REQUEST['telefono'] : '[Sin teléfono]';
@@ -14,14 +15,13 @@ function sanear_input ($s){
 }
 
 function validar_email ($s){
-	if (!filter_var ($s, FILTER_VALIDATE_EMAIL))
-		{return (false);}
-	else
-		{
-			$s = sanear_input ($s);
-			//
-			return ($s);
-		}
+	if (!filter_var ($s, FILTER_VALIDATE_EMAIL)){
+		return (false);
+	} else {
+		$s = sanear_input ($s);
+		//
+		return ($s);
+	}
 	//
 	return ($s);
 }
@@ -45,12 +45,9 @@ $res = query ($cnx, $s);
 //
 desconectar ($cnx);
 //
-
 $r = new StdClass;
 $r->res = 'ok';
 $json = json_encode($r);
-
+//
 echo ($json);
-
 ?>
-
